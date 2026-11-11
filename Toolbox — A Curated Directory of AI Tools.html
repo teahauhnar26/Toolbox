@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0a0a0c">
+  <title>Toolbox — A Curated Directory of AI Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InRiLXRpbGUiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzZERkRBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwQkVDNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idGItY29yYWwiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjRkZBNzlBIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0ZGNUM2MiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idGItZ29sZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRkYwN0EiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZCMDIwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ0Yi1hcXVhIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzU1RjZGMyIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQUUzRTgiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InRiLWZsb3ciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIwIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNUZFRkYyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjMDBFOEYyIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNERUZGMSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InRiLXNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTUwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxIiBzdGREZXZpYXRpb249IjEiIGZsb29kLWNvbG9yPSIjMDQ1MDVBIiBmbG9vZC1vcGFjaXR5PSIwLjM1Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iMTEiIGZpbGw9InVybCgjdGItdGlsZSkiLz4KICA8ZyBmaWx0ZXI9InVybCgjdGItc2hhZG93KSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0yMy45IDkuNiBMMTcuMCAyMi4wIEgzMC44IFoiIHN0cm9rZT0idXJsKCN0Yi1jb3JhbCkiIHN0cm9rZS13aWR0aD0iNC42Ii8+CiAgICA8Y2lyY2xlIGN4PSIxNC45IiBjeT0iMzEuOCIgcj0iNi40IiBzdHJva2U9InVybCgjdGItZ29sZCkiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPHJlY3QgeD0iMjUuNCIgeT0iMjUuNiIgd2lkdGg9IjEzLjYiIGhlaWdodD0iMTIuOSIgcng9IjQiIHN0cm9rZT0idXJsKCN0Yi1hcXVhKSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8cGF0aCBkPSJNMjIuNiAyMi4wIEgyNSBDMjggMjIuMCAyNy44IDI1LjYgMzEgMjUuNiBIMzQuNSIgc3Ryb2tlPSJ1cmwoI3RiLWZsb3cpIiBzdHJva2Utd2lkdGg9IjMuOCIvPgogIDwvZz4KPC9zdmc+Cg==" type="image/svg+xml">
+  <style>
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0c;
+  --panel: #0f0f12;
+  --raise: #17161c;
+  --line: rgba(255, 255, 255, .16);
+  --line-soft: rgba(255, 255, 255, .09);
+  --text: #f5f3f9;
+  --muted: #aaa5b6;
+  --faint: #85808f;
+  --lav: #c8b8f6;
+  --lav-ink: #1a1330;
+  --lav-tint: rgba(200, 184, 246, .17);
+  --danger: #ff909a;
+  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 15px/1.5 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+
+:focus-visible { outline: 2px solid var(--lav); outline-offset: 2px; }
+.search input:focus-visible { outline: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+/* ---------- Header ---------- */
+
+.site-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 26px 0 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  font: 400 40px/1 var(--serif);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tagline {
+  padding-left: 22px;
+  border-left: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .2em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.main-nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
+
+.nav-dd { position: relative; }
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-size: 15px;
+}
+
+.nav-link .icon { width: 16px; height: 16px; }
+.nav-link:hover { color: var(--lav); }
+.nav-link.active { border-bottom-color: var(--text); }
+
+.header-icons { display: flex; align-items: center; gap: 4px; }
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+}
+
+.icon-btn:hover { background: rgba(255, 255, 255, .08); }
+.icon-btn[aria-pressed="true"] { color: var(--lav); }
+.icon-btn[aria-pressed="true"] .icon { fill: currentColor; }
+.menu-btn { display: none; }
+
+.pop, .dd-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 100%;
+  width: max-content;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #141319;
+  box-shadow: 0 18px 50px #000a;
+}
+
+.pop { min-width: 220px; }
+
+.pop-item, .dd-opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.pop-item:hover, .pop-item:focus-visible,
+.dd-opt:hover, .dd-opt:focus-visible { outline: 0; background: rgba(255, 255, 255, .08); }
+
+.mobile-menu { border-bottom: 1px solid var(--line); padding: 10px 0 16px; }
+.mobile-menu .group { display: grid; }
+.mobile-menu .group + .group { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--line-soft); }
+
+.mobile-menu button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 4px;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+
+.mobile-menu button .icon { color: var(--muted); }
+.mobile-menu button.active { color: var(--lav); }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) 1px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 40px;
+  padding: 38px 0 34px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font: italic 400 clamp(44px, 5vw, 72px)/.98 var(--serif);
+  letter-spacing: -.01em;
+  white-space: nowrap;
+}
+
+.hero-rule { align-self: stretch; background: var(--line); margin: 6px 0; }
+
+.hero-copy {
+  margin: 0;
+  max-width: 330px;
+  color: #dcd8e6;
+  font: 400 21px/1.35 var(--serif);
+}
+
+.plus-btn {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: none;
+  color: var(--muted);
+}
+
+.plus-btn .icon { width: 36px; height: 36px; stroke-width: 1; }
+.plus-btn:hover { color: var(--lav); border-color: var(--line); }
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 58px;
+  padding: 0 9px 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.search:focus-within { border-color: var(--lav); }
+.search > .icon { width: 24px; height: 24px; }
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+}
+
+.search input::placeholder { color: var(--muted); }
+.search input::-webkit-search-cancel-button { appearance: none; }
+
+.kbd {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.kbd span { padding: 5px 10px; }
+.kbd span + span { border-left: 1px solid var(--line); }
+
+.btn-primary {
+  height: 42px;
+  padding: 0 28px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--lav);
+  color: var(--lav-ink);
+  font-weight: 600;
+  transition: filter 150ms ease;
+}
+
+.btn-primary:hover { filter: brightness(1.08); }
+
+.popular { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding-left: 4px; }
+.popular > span { font-size: 14px; font-weight: 600; }
+.popular .chips { display: flex; flex-wrap: wrap; gap: 11px; }
+
+.chip {
+  padding: 6px 17px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  font-size: 13px;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+
+.chip:hover { border-color: var(--lav); background: var(--lav-tint); }
+
+/* ---------- Layout ---------- */
+
+.layout {
+  display: grid;
+  grid-template-columns: 262px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin: 36px 0 48px;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+}
+
+.sidebar { position: sticky; top: 16px; padding: 12px; }
+
+.cat, .col {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  text-align: left;
+  transition: background 150ms ease;
+}
+
+.cat { padding: 11px 14px; font-size: 14.5px; }
+.cat .count { margin-left: auto; color: var(--muted); font-size: 13px; line-height: 1; }
+.cat:hover, .col:hover { background: rgba(255, 255, 255, .06); }
+.cat.active, .col.active { background: var(--lav-tint); }
+.cat.active .icon, .col.active .icon { color: var(--lav); }
+
+.side-rule { margin: 12px 4px; border: 0; border-top: 1px solid var(--line); }
+
+.side-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 6px;
+  padding: 6px 14px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.side-title .icon { color: var(--lav); }
+.col { padding: 9px 14px; font-size: 14px; color: #dcd8e6; }
+.col .icon { width: 18px; height: 18px; color: var(--muted); }
+
+.side-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 10px 4px 2px;
+  padding: 12px 10px 4px;
+  border-top: 1px solid var(--line);
+}
+
+.link-btn {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.link-btn:hover { color: var(--lav); }
+
+/* Mobile categories */
+
+.m-cats { display: none; margin-top: 30px; }
+
+.m-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 14px; }
+.m-head h2 { margin: 0; font: 400 28px/1 var(--serif); }
+.m-head .link-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; text-decoration: none; color: var(--text); }
+.m-head .icon { width: 16px; height: 16px; }
+
+.m-tiles {
+  display: flex;
+  gap: 10px;
+  margin: 0 -16px;
+  padding: 0 16px 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.m-tiles::-webkit-scrollbar { display: none; }
+.m-tiles.expanded { flex-wrap: wrap; overflow: visible; }
+
+.tile {
+  display: grid;
+  flex: none;
+  justify-items: center;
+  align-content: center;
+  gap: 7px;
+  width: 82px;
+  height: 74px;
+  padding: 8px 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: none;
+  font-size: 12px;
+}
+
+.tile.active { border-color: var(--lav); background: var(--lav-tint); }
+.tile.active .icon { color: var(--lav); }
+
+/* ---------- Directory ---------- */
+
+.directory { container-type: inline-size; scroll-margin-top: 14px; }
+
+.dir-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 24px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.dir-head h2 { margin: 0; font: 400 38px/1.05 var(--serif); }
+.dir-head p { margin: 6px 0 0; font-size: 14.5px; }
+.count { padding-top: 10px; color: #dcd8e6; font-size: 15px; white-space: nowrap; }
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.dd { position: relative; }
+
+.dd-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+  min-width: 150px;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14.5px;
+  text-align: left;
+}
+
+.dd-btn:hover, .dd-btn[aria-expanded="true"] { border-color: var(--lav); }
+.dd-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dd-btn .icon { width: 18px; height: 18px; transition: transform 160ms ease; }
+.dd-btn[aria-expanded="true"] .icon { transform: rotate(180deg); }
+
+.dd-mark { display: grid; place-items: center; width: 18px; height: 18px; flex: none; border-radius: 4px; }
+.dd-mark .icon { width: 14px; height: 14px; stroke-width: 2.4; opacity: 0; }
+.dd-opt.selected .dd-mark .icon { opacity: 1; }
+.dd-opt.selected { color: var(--lav); }
+.dd[data-multi] .dd-mark { border: 1.5px solid var(--faint); }
+.dd[data-multi] .dd-opt.selected { color: var(--text); }
+.dd[data-multi] .dd-opt.selected .dd-mark { border-color: var(--lav); background: var(--lav); color: var(--lav-ink); }
+
+.view-toggle {
+  display: flex;
+  margin-left: auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.view-toggle button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 40px;
+  border: 0;
+  background: none;
+}
+
+.view-toggle button.active { background: var(--lav); color: var(--lav-ink); }
+.view-toggle button:not(.active):hover { background: rgba(255, 255, 255, .08); }
+
+/* Tool rows (list view) */
+
+.tools { padding: 0 24px 6px; }
+
+.tool {
+  display: grid;
+  grid-template-columns: 56px minmax(130px, 170px) minmax(0, 1fr) auto 96px auto;
+  grid-template-areas: "logo name desc tags badge actions";
+  align-items: center;
+  gap: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.tool:last-child { border-bottom: 0; }
+
+.t-logo {
+  grid-area: logo;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--raise);
+  font: 400 32px/1 var(--serif);
+}
+
+.t-name { grid-area: name; margin: 0; font: 400 26px/1.1 var(--serif); overflow-wrap: anywhere; }
+
+.t-desc {
+  grid-area: desc;
+  display: -webkit-box;
+  margin: 0;
+  overflow: hidden;
+  color: #d4d0de;
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.t-tags { grid-area: tags; display: flex; gap: 8px; }
+
+.tag {
+  padding: 3px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11.5px;
+  white-space: nowrap;
+}
+
+.badge {
+  grid-area: badge;
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.badge-freemium { background: #f3f1f7; color: var(--lav-ink); }
+.badge-paid { background: var(--lav); color: var(--lav-ink); }
+.badge-free { border: 1px solid var(--lav); color: var(--lav); }
+
+.t-actions { grid-area: actions; display: flex; align-items: center; gap: 2px; }
+
+.ico {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 9px;
+  background: none;
+  color: var(--text);
+  text-decoration: none;
+  transition: background 150ms ease, color 150ms ease, opacity 150ms ease;
+}
+
+.ico .icon { width: 19px; height: 19px; }
+.ico:hover { background: rgba(255, 255, 255, .09); }
+.ico.fav.is-on { color: var(--lav); }
+.ico.fav.is-on .icon { fill: currentColor; }
+.ico.edit, .ico.del { opacity: 0; }
+.ico.del:hover { color: var(--danger); }
+.tool:hover .ico.edit, .tool:hover .ico.del,
+.tool:focus-within .ico.edit, .tool:focus-within .ico.del { opacity: 1; }
+
+@media (hover: none) {
+  .ico.edit, .ico.del { opacity: 1; }
+  .kbd { display: none; }
+}
+
+.empty-state { margin: 0; padding: 48px 20px; color: var(--muted); text-align: center; }
+
+/* Medium widths: description moves under the name so it has room to breathe */
+@container (max-width: 960px) {
+  .tools[data-view="list"] .tool {
+    grid-template-columns: 56px minmax(0, 1fr) auto 96px auto;
+    grid-template-areas: "logo name tags badge actions" "logo desc tags badge actions";
+    gap: 3px 18px;
+  }
+  .tools[data-view="list"] .t-name { align-self: end; }
+  .tools[data-view="list"] .t-desc { align-self: start; }
+}
+
+@container (max-width: 760px) {
+  .tools[data-view="list"] .tool {
+    grid-template-columns: 56px minmax(0, 1fr) 96px auto;
+    grid-template-areas: "logo name badge actions" "logo desc badge actions";
+  }
+  .tools[data-view="list"] .t-tags { display: none; }
+}
+
+/* Card grid view */
+
+.tools[data-view="grid"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+.tools[data-view="grid"] .tool {
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo badge" "name name" "desc desc" "tags tags" "actions actions";
+  align-items: start;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line-soft);
+  border-radius: 14px;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.tools[data-view="grid"] .tool:hover { border-color: var(--lav); transform: translateY(-2px); }
+.tools[data-view="grid"] .t-tags { display: flex; flex-wrap: wrap; }
+.tools[data-view="grid"] .badge { width: auto; padding: 5px 14px; }
+.tools[data-view="grid"] .t-actions { justify-content: flex-start; margin: 4px 0 -6px -8px; }
+
+/* ---------- Footer ---------- */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 22px 0 40px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+/* ---------- Dialog, toast, FAB ---------- */
+
+dialog {
+  width: min(480px, calc(100% - 28px));
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #121116;
+  color: var(--text);
+  box-shadow: 0 30px 90px #000c;
+}
+
+dialog::backdrop { background: #000a; backdrop-filter: blur(2px); }
+
+.dialog-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; margin-bottom: 18px; }
+.dialog-heading .eyebrow { margin: 0; color: var(--muted); }
+.dialog-heading h2 { margin: 6px 0 0; font: 400 34px/1.05 var(--serif); }
+
+.close-button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: none;
+}
+
+.close-button:hover { background: rgba(255, 255, 255, .08); }
+
+#tool-form { display: grid; gap: 8px; }
+#tool-form label { margin-top: 8px; font-size: 13px; font-weight: 600; }
+#tool-form label small { color: var(--muted); font-weight: 400; }
+
+#tool-form input, #tool-form select, #tool-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  outline: 0;
+}
+
+#tool-form input:focus, #tool-form select:focus, #tool-form textarea:focus { border-color: var(--lav); }
+#tool-form textarea { min-height: 90px; resize: vertical; }
+#tool-form ::placeholder { color: var(--faint); }
+
+.form-error {
+  margin: 4px 0 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #ff909a1f;
+  color: var(--danger);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.submit-button { width: 100%; height: 46px; margin-top: 12px; }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: calc(100% - 32px);
+  padding: 12px 12px 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #1d1b24;
+  font-size: 14px;
+  box-shadow: 0 16px 40px #000a;
+  transform: translateX(-50%);
+}
+
+.toast button { padding: 7px 11px; border: 0; border-radius: 8px; background: none; color: var(--lav); font-weight: 600; }
+.toast button:hover { background: rgba(255, 255, 255, .1); }
+
+.fab {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  z-index: 15;
+  display: none;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--lav);
+  color: var(--lav-ink);
+  box-shadow: 0 10px 30px #000a;
+}
+
+.fab .icon { width: 26px; height: 26px; stroke-width: 2; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1050px) {
+  .tagline { display: none; }
+  .hero { gap: 30px; }
+}
+
+@media (max-width: 900px) {
+  .wrap { padding: 0 16px; }
+  .site-header { padding: 18px 0 14px; }
+  .logo { font-size: 32px; }
+  .main-nav { display: none; }
+  .header-icons { margin-left: auto; }
+  .menu-btn { display: grid; }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 26px 0 22px;
+  }
+
+  .hero-rule, .plus-btn { display: none; }
+  .hero h1 { font-size: clamp(40px, 11vw, 56px); white-space: normal; }
+  .hero-copy { max-width: none; color: #dcd8e6; font: 400 15px/1.45 var(--sans); }
+
+  .layout { grid-template-columns: 1fr; margin: 0 0 40px; }
+  .sidebar { display: none; }
+  .m-cats { display: block; margin-bottom: 30px; }
+  .fab { display: grid; }
+}
+
+@media (max-width: 700px) {
+  .search { height: 52px; padding-right: 12px; }
+  .search-btn { display: none; }
+  .popular { gap: 12px; }
+  .popular > span { flex: none; }
+  .popular .chips { flex-wrap: nowrap; gap: 8px; margin-right: -16px; padding-right: 16px; overflow-x: auto; scrollbar-width: none; }
+  .popular .chips::-webkit-scrollbar { display: none; }
+  .popular .chip { flex: none; }
+
+  .directory { border-radius: 0; border-width: 0; background: none; }
+  .dir-head { padding: 0 0 14px; border-bottom: 0; }
+  .dir-head h2 { font-size: 30px; }
+  .dir-head p { display: none; }
+  .count { padding-top: 8px; }
+
+  .toolbar { display: grid; grid-template-columns: 1fr 1fr; padding: 0 0 12px; border-bottom: 1px solid var(--line); }
+  .toolbar .dd-btn { min-width: 0; }
+  .toolbar .dd-cat, .view-toggle { display: none; }
+  .dd-menu { min-width: 190px; }
+  .toolbar .dd:nth-child(2) .dd-menu { left: auto; right: 0; }
+
+  .tools { padding: 0; }
+
+  .tools[data-view="list"] .tool {
+    grid-template-columns: 52px minmax(0, 1fr) auto;
+    grid-template-areas: "logo name badge" "logo desc desc" "logo actions actions";
+    gap: 2px 14px;
+    align-items: start;
+    padding: 14px 0;
+  }
+
+  .tools[data-view="list"] .t-name,
+  .tools[data-view="list"] .t-desc { align-self: start; }
+
+  .t-logo { width: 52px; height: 52px; font-size: 28px; }
+  .t-name { font-size: 22px; }
+  .badge { width: auto; padding: 4px 14px; justify-self: end; }
+  .t-actions { justify-self: start; margin: 4px 0 -6px -8px; }
+  .ico { width: 36px; height: 36px; }
+}
+
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M7 3.5h10a1 1 0 0 1 1 1V21l-6-4.2L6 21V4.5a1 1 0 0 1 1-1z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11M4 6.5h.01M4 12h.01M4 17.5h.01"/></symbol>
+      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19.5 8.5l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.7 5 2.3 7.3 8 9-5.7 1.7-7.3 4-8 9-.7-5-2.3-7.3-8-9 5.7-1.7 7.3-4 8-9z"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m20.5 16-5-5-9 8.5"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M10.2 8.8v6.4l5.2-3.2z"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3.5h7l4.5 4.5V20.5H7z"/><path d="M14 3.5V8h4.5M10 13h5M10 16.5h5"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 12.5 9 5 9-5M3 16.5l9 5 9-5"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 4 4.5v14c3 0 6 .5 8 2 2-1.5 5-2 8-2v-14c-3 0-6 .5-8 2z"/><path d="M12 6.5v14"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3-8 4v10l8 4 8-4V7z"/><path d="m4 7 8 4 8-4M12 11v10"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="#" id="logo-link">Toolbox.</a>
+      <span class="tagline">A curated directory of AI tools</span>
+
+      <nav class="main-nav" aria-label="Main">
+        <button type="button" class="nav-link active" id="nav-home">Home</button>
+        <div class="nav-dd">
+          <button type="button" class="nav-link" id="nav-categories" aria-haspopup="menu" aria-expanded="false">Categories <svg class="icon"><use href="#i-chevron"/></svg></button>
+          <div class="pop" id="pop-categories" role="menu" aria-label="Categories" hidden></div>
+        </div>
+        <div class="nav-dd">
+          <button type="button" class="nav-link" id="nav-collections" aria-haspopup="menu" aria-expanded="false">Collections</button>
+          <div class="pop" id="pop-collections" role="menu" aria-label="Collections" hidden></div>
+        </div>
+        <button type="button" class="nav-link" id="nav-fav">Favourites</button>
+      </nav>
+
+      <div class="header-icons">
+        <button type="button" class="icon-btn" id="hdr-search" aria-label="Search"><svg class="icon"><use href="#i-search"/></svg></button>
+        <button type="button" class="icon-btn" id="hdr-fav" aria-label="Show favourites" aria-pressed="false"><svg class="icon"><use href="#i-bookmark"/></svg></button>
+        <button type="button" class="icon-btn menu-btn" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="icon"><use href="#i-menu"/></svg></button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden></div>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Discover AI tools</p>
+          <h1>Find the right tool<br>for the job.</h1>
+        </div>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <p class="hero-copy">A curated directory of AI tools for creativity, productivity, learning and development.</p>
+        <button type="button" class="plus-btn js-add" aria-label="Add a tool" title="Add a tool"><svg class="icon"><use href="#i-plus"/></svg></button>
+      </section>
+
+      <form class="search" id="search-form" role="search">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="search-input" type="search" placeholder="Search for tools, features or use cases…" aria-label="Search tools" autocomplete="off">
+        <kbd class="kbd" id="kbd-hint" title="Press to search"><span>Ctrl</span><span>K</span></kbd>
+        <button type="submit" class="btn-primary search-btn">Search</button>
+      </form>
+
+      <div class="popular">
+        <span>Popular:</span>
+        <div class="chips" id="popular-chips"></div>
+      </div>
+
+      <section class="m-cats" aria-label="Categories">
+        <div class="m-head">
+          <h2>Categories</h2>
+          <button type="button" class="link-btn" id="m-viewall">View all <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+        <div class="m-tiles" id="m-tiles"></div>
+      </section>
+
+      <div class="layout">
+        <aside class="panel sidebar" aria-label="Browse">
+          <nav id="cat-list" aria-label="Categories"></nav>
+          <hr class="side-rule">
+          <h2 class="side-title"><svg class="icon"><use href="#i-layers"/></svg> Collections</h2>
+          <nav id="col-list" aria-label="Collections"></nav>
+          <div class="side-foot">
+            <button type="button" class="link-btn js-add">Add a tool</button>
+            <button type="button" class="link-btn" id="export-button">Export</button>
+            <button type="button" class="link-btn" id="import-button">Import</button>
+          </div>
+        </aside>
+
+        <section class="panel directory" id="directory" aria-labelledby="dir-title">
+          <div class="dir-head">
+            <div>
+              <h2 id="dir-title">Tool Directory</h2>
+              <p id="dir-sub">Browse, filter and find the right AI tool for your needs.</p>
+            </div>
+            <span class="count" id="tool-count" aria-live="polite">0 tools</span>
+          </div>
+
+          <div class="toolbar">
+            <div id="dd-sort"></div>
+            <div id="dd-price"></div>
+            <div id="dd-cat" class="dd-cat"></div>
+            <div class="view-toggle" role="group" aria-label="Layout">
+              <button type="button" data-view="grid" aria-label="Card view" title="Card view"><svg class="icon"><use href="#i-grid"/></svg></button>
+              <button type="button" data-view="list" aria-label="List view" title="List view"><svg class="icon"><use href="#i-list"/></svg></button>
+            </div>
+          </div>
+
+          <div class="tools" id="tools-grid" data-view="list"></div>
+          <p class="empty-state" id="empty-state" hidden></p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <span>Made for your curiosity.</span>
+      <span>One toolbox, endless possibilities.</span>
+    </footer>
+  </div>
+
+  <button type="button" class="fab js-add" aria-label="Add a tool"><svg class="icon"><use href="#i-plus"/></svg></button>
+  <input type="file" id="import-file" accept="application/json,.json" hidden>
+
+  <dialog id="tool-dialog">
+    <form id="tool-form">
+      <div class="dialog-heading">
+        <div>
+          <p class="eyebrow" id="dialog-eyebrow">Expand your collection</p>
+          <h2 id="dialog-title">Add an AI tool</h2>
+        </div>
+        <button type="button" class="close-button" id="close-dialog" aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button>
+      </div>
+
+      <label for="tool-name">Tool name</label>
+      <input id="tool-name" name="name" required maxlength="60" placeholder="e.g. ChatGPT">
+
+      <label for="tool-url">Website URL</label>
+      <input id="tool-url" name="url" type="url" required placeholder="https://example.com">
+
+      <label for="tool-category">Category</label>
+      <select id="tool-category" name="category" required></select>
+
+      <label for="tool-price">Pricing</label>
+      <select id="tool-price" name="price" required>
+        <option value="Free">Free</option>
+        <option value="Freemium" selected>Freemium</option>
+        <option value="Paid">Paid</option>
+      </select>
+
+      <label for="tool-description">Short description</label>
+      <textarea id="tool-description" name="description" required maxlength="180" placeholder="What is this tool useful for?"></textarea>
+
+      <label for="tool-tags">Tags <small>(optional, comma separated, up to 3)</small></label>
+      <input id="tool-tags" name="tags" maxlength="60" placeholder="e.g. Chat, Writing, Research">
+
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+
+      <button class="btn-primary submit-button" id="submit-button" type="submit">Add to my collection</button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+    <span id="toast-message"></span>
+    <button type="button" id="toast-action" hidden></button>
+  </div>
+
+<script>
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+const STORAGE_KEY = "toolbox.tools.v1";
+const SORT_KEY = "toolbox.sort.v1";
+const VIEW_KEY = "toolbox.view.v1";
+
+const ALL = { key: "All", label: "All Tools", short: "All Tools", icon: "sparkle" };
+const CATS = [
+  { key: "Image", label: "Image Generation", short: "Image", icon: "image" },
+  { key: "Video", label: "Video Creation", short: "Video", icon: "play" },
+  { key: "Coding", label: "Coding & Dev", short: "Coding", icon: "code" },
+  { key: "Writing", label: "Writing & Content", short: "Writing", icon: "file" },
+  { key: "Productivity", label: "Productivity", short: "Productivity", icon: "layers" },
+  { key: "Research", label: "Learning & Research", short: "Research", icon: "book" },
+  { key: "Other", label: "Other", short: "Other", icon: "grid" }
+];
+const CATEGORIES = CATS.map((c) => c.key);
+const PRICES = ["Free", "Freemium", "Paid"];
+const catOf = (key) => [ALL, ...CATS].find((c) => c.key === key);
+
+// Collections are smart groups built from your own tools.
+const COLLECTIONS = [
+  { id: "essential", label: "Essential AI Tools", icon: "layers" },
+  { id: "free", label: "Free AI Tools", icon: "box" },
+  { id: "students", label: "For Students", icon: "box" },
+  { id: "creators", label: "For Creators", icon: "box" }
+];
+
+const COLLECTION_TESTS = {
+  essential: (tool, essential) => essential.has(tool),
+  free: (tool) => tool.price === "Free" || tool.price === "Freemium",
+  students: (tool) => ["Research", "Writing", "Productivity"].includes(tool.category),
+  creators: (tool) => ["Image", "Video", "Writing"].includes(tool.category)
+};
+
+const sorters = {
+  popular: (a, b) => Number(b.favorite) - Number(a.favorite) || a.added - b.added,
+  newest: (a, b) => b.added - a.added,
+  oldest: (a, b) => a.added - b.added,
+  az: (a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
+  za: (a, b) => b.name.localeCompare(a.name, undefined, { sensitivity: "base" })
+};
+
+const SORT_OPTIONS = [
+  { value: "popular", label: "Popular" },
+  { value: "newest", label: "Newest first" },
+  { value: "oldest", label: "Oldest first" },
+  { value: "az", label: "Name A to Z" },
+  { value: "za", label: "Name Z to A" }
+];
+
+const SEED_TOOLS = [
+  { name: "ChatGPT", url: "https://chatgpt.com", category: "Writing", price: "Freemium", description: "A general-purpose AI assistant for writing, learning and more.", tags: ["Chat", "Writing", "Research"] },
+  { name: "Claude", url: "https://claude.ai", category: "Writing", price: "Freemium", description: "AI assistant for writing, analysis and coding tasks.", tags: ["Chat", "Analysis", "Coding"] },
+  { name: "Midjourney", url: "https://www.midjourney.com", category: "Image", price: "Paid", description: "Create high-quality and artistic images from text prompts.", tags: ["Image", "Art", "Design"] },
+  { name: "Gemini", url: "https://gemini.google.com", category: "Research", price: "Freemium", description: "Google's multimodal AI for writing, planning and analysis.", tags: ["Chat", "Multimodal", "Research"] },
+  { name: "Runway", url: "https://runwayml.com", category: "Video", price: "Paid", description: "Create and edit videos with AI, from text, images or existing footage.", tags: ["Video", "Editing", "Generative"] },
+  { name: "Notion", url: "https://www.notion.so", category: "Productivity", price: "Freemium", description: "All-in-one workspace for notes, docs and projects, with built-in AI.", tags: ["Notes", "Docs", "Planning"] },
+  { name: "Figma", url: "https://www.figma.com", category: "Other", price: "Freemium", description: "Collaborative interface design with AI-assisted tools.", tags: ["Design", "UI", "Teams"] },
+  { name: "GitHub Copilot", url: "https://github.com/features/copilot", category: "Coding", price: "Paid", description: "AI pair programmer that suggests code right inside your editor.", tags: ["Code", "Autocomplete", "IDE"] },
+  { name: "Perplexity", url: "https://www.perplexity.ai", category: "Research", price: "Freemium", description: "Answer engine that searches the web and cites its sources.", tags: ["Search", "Research", "Citations"] }
+];
+
+function h(tag, attrs = {}, ...kids) {
+  const node = document.createElement(tag);
+  for (const [key, value] of Object.entries(attrs)) {
+    if (value === false || value == null) continue;
+    if (key === "class") node.className = value;
+    else if (key === "text") node.textContent = value;
+    else node.setAttribute(key, value === true ? "" : value);
+  }
+  node.append(...kids.flat().filter((kid) => kid != null && kid !== false));
+  return node;
+}
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+function icon(name) {
+  const svg = document.createElementNS(SVG_NS, "svg");
+  svg.setAttribute("class", "icon");
+  svg.setAttribute("aria-hidden", "true");
+  const use = document.createElementNS(SVG_NS, "use");
+  use.setAttribute("href", `#i-${name}`);
+  svg.append(use);
+  return svg;
+}
+
+function isSafeUrl(value) {
+  try {
+    return ["http:", "https:"].includes(new URL(value).protocol);
+  } catch {
+    return false;
+  }
+}
+
+function cleanTags(value) {
+  const list = Array.isArray(value) ? value : typeof value === "string" ? value.split(",") : [];
+  return list
+    .filter((tag) => typeof tag === "string")
+    .map((tag) => tag.trim().slice(0, 20))
+    .filter(Boolean)
+    .slice(0, 3);
+}
+
+// Cleans one tool from storage or an imported file. Returns null if it can't be used.
+function normalizeTool(raw, fallbackAdded = 0) {
+  if (!raw || typeof raw !== "object") return null;
+
+  const name = typeof raw.name === "string" ? raw.name.trim().slice(0, 60) : "";
+  const url = typeof raw.url === "string" ? raw.url.trim() : "";
+  const description =
+    typeof raw.description === "string" ? raw.description.trim().slice(0, 180) : "";
+
+  if (!name || !isSafeUrl(url) || !CATEGORIES.includes(raw.category)) return null;
+
+  return {
+    name,
+    url: new URL(url).href,
+    category: raw.category,
+    price: PRICES.includes(raw.price) ? raw.price : "Freemium",
+    description,
+    tags: cleanTags(raw.tags),
+    favorite: Boolean(raw.favorite),
+    added: Number.isFinite(raw.added) ? raw.added : fallbackAdded
+  };
+}
+
+function loadTools() {
+  let raw = null;
+  try {
+    raw = localStorage.getItem(STORAGE_KEY);
+  } catch {
+    /* storage blocked - fall through to the starter tools */
+  }
+
+  // First visit: start with a few well-known tools so the page isn't empty.
+  if (raw === null) {
+    const base = Date.now() - SEED_TOOLS.length * 1000;
+    return {
+      seeded: true,
+      list: SEED_TOOLS.map((tool, index) => normalizeTool(tool, base + index * 1000))
+    };
+  }
+
+  try {
+    const saved = JSON.parse(raw);
+    if (Array.isArray(saved)) {
+      return { seeded: false, list: saved.map((tool, i) => normalizeTool(tool, i)).filter(Boolean) };
+    }
+  } catch {
+    /* corrupt data - start empty */
+  }
+  return { seeded: false, list: [] };
+}
+
+function saveTools() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(tools));
+  } catch {
+    /* storage unavailable (private mode / blocked) - the app still works for this session */
+  }
+}
+
+function loadPref(key, allowed, fallback) {
+  try {
+    const saved = localStorage.getItem(key);
+    return allowed.includes(saved) ? saved : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function savePref(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* ignore - the choice just won't be remembered */
+  }
+}
+
+function isDuplicate(candidate, ignore = null) {
+  return tools.some(
+    (tool) =>
+      tool !== ignore &&
+      (tool.url === candidate.url ||
+        tool.name.toLowerCase() === candidate.name.toLowerCase())
+  );
+}
+
+const loaded = loadTools();
+const tools = loaded.list;
+if (loaded.seeded) saveTools();
+
+const state = {
+  category: "All",
+  collection: null,
+  favorites: false,
+  prices: new Set(),
+  sort: loadPref(SORT_KEY, Object.keys(sorters), "popular"),
+  view: loadPref(VIEW_KEY, ["list", "grid"], "list")
+};
+
+let editingTool = null;
+
+const searchInput = $("#search-input");
+const toolsGrid = $("#tools-grid");
+const emptyState = $("#empty-state");
+const directory = $("#directory");
+const dialog = $("#tool-dialog");
+const form = $("#tool-form");
+const formError = $("#form-error");
+const toast = $("#toast");
+const toastMessage = $("#toast-message");
+const toastAction = $("#toast-action");
+const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+
+const plural = (count, word) => `${count} ${word}${count === 1 ? "" : "s"}`;
+
+function jumpToDirectory() {
+  directory.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+}
+
+/* ---------- Toast (messages + undo) ---------- */
+
+let toastTimer;
+
+function hideToast() {
+  clearTimeout(toastTimer);
+  toast.hidden = true;
+}
+
+function showToast(message, actionLabel, onAction) {
+  clearTimeout(toastTimer);
+  toastMessage.textContent = message;
+  toastAction.hidden = !onAction;
+  toastAction.textContent = actionLabel || "";
+  toastAction.onclick = onAction
+    ? () => {
+        hideToast();
+        onAction();
+      }
+    : null;
+  toast.hidden = false;
+  toastTimer = setTimeout(hideToast, onAction ? 7000 : 4500);
+}
+
+/* ---------- Dropdowns (custom, keyboard friendly) ---------- */
+
+function createDropdown(root, cfg) {
+  root.classList.add("dd");
+  if (cfg.multi) root.dataset.multi = "";
+
+  const labelEl = h("span", { class: "dd-label" });
+  const button = h("button", { type: "button", class: "dd-btn", "aria-haspopup": "menu", "aria-expanded": "false" }, labelEl, icon("chevron"));
+  const menu = h("div", { class: "dd-menu", role: "menu", "aria-label": cfg.name, hidden: true });
+
+  const items = cfg.options.map((opt) => {
+    const item = h(
+      "button",
+      { type: "button", class: "dd-opt", role: cfg.multi ? "menuitemcheckbox" : "menuitemradio", "data-value": opt.value },
+      h("span", { class: "dd-mark" }, icon("check")),
+      h("span", { text: opt.label })
+    );
+    item.addEventListener("click", () => {
+      cfg.onPick(opt.value);
+      refresh();
+      if (!cfg.multi) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+    return item;
+  });
+
+  menu.append(...items);
+  root.append(button, menu);
+
+  function refresh() {
+    const text = cfg.getLabel();
+    labelEl.textContent = text;
+    button.setAttribute("aria-label", text);
+    items.forEach((item) => {
+      const on = cfg.isSelected(item.dataset.value);
+      item.classList.toggle("selected", on);
+      item.setAttribute("aria-checked", String(on));
+    });
+  }
+
+  function setOpen(open, focusSelected = false) {
+    menu.hidden = !open;
+    button.setAttribute("aria-expanded", String(open));
+    if (open && focusSelected) (menu.querySelector(".selected") || items[0]).focus();
+  }
+
+  function moveFocus(step) {
+    const current = items.indexOf(document.activeElement);
+    const next = current === -1
+      ? (step > 0 ? 0 : items.length - 1)
+      : (current + step + items.length) % items.length;
+    items[next].focus();
+  }
+
+  // event.detail is 0 when a button is "clicked" with Enter or Space, so keyboard
+  // users land inside the menu while mouse users keep focus on the button.
+  button.addEventListener("click", (event) => setOpen(menu.hidden, event.detail === 0));
+
+  document.addEventListener("click", (event) => {
+    if (!root.contains(event.target)) setOpen(false);
+  });
+
+  root.addEventListener("keydown", (event) => {
+    const menuOpen = !menu.hidden;
+    switch (event.key) {
+      case "Escape":
+        if (!menuOpen) return;
+        setOpen(false);
+        button.focus();
+        break;
+      case "ArrowDown":
+      case "ArrowUp":
+        event.preventDefault();
+        if (!menuOpen) setOpen(true, true);
+        else moveFocus(event.key === "ArrowDown" ? 1 : -1);
+        break;
+      case "Home":
+      case "End":
+        if (!menuOpen) return;
+        event.preventDefault();
+        items[event.key === "Home" ? 0 : items.length - 1].focus();
+        break;
+      case "Tab":
+        setOpen(false);
+        break;
+    }
+  });
+
+  refresh();
+  return { refresh, close: () => setOpen(false) };
+}
+
+// Simple popover menu used by the header links and the mobile menu.
+function createPopover(trigger, pop, entries) {
+  entries.forEach((entry) => {
+    pop.append(
+      h("button", { type: "button", class: "pop-item", role: "menuitem" }, entry.icon ? icon(entry.icon) : null, entry.label)
+    );
+  });
+
+  const setOpen = (open) => {
+    pop.hidden = !open;
+    trigger.setAttribute("aria-expanded", String(open));
+  };
+
+  trigger.addEventListener("click", () => setOpen(pop.hidden));
+
+  [...pop.children].forEach((button, index) => {
+    button.addEventListener("click", () => {
+      setOpen(false);
+      entries[index].run();
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!pop.contains(event.target) && !trigger.contains(event.target)) setOpen(false);
+  });
+
+  trigger.parentElement.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !pop.hidden) {
+      setOpen(false);
+      trigger.focus();
+    }
+  });
+}
+
+/* ---------- Views: categories, collections, favourites ---------- */
+
+function setCategory(key, { jump = false } = {}) {
+  state.category = key;
+  state.collection = null;
+  state.favorites = false;
+  catDropdown.refresh();
+  renderTools();
+  if (jump) jumpToDirectory();
+}
+
+function setCollection(id, { jump = false } = {}) {
+  state.collection = state.collection === id ? null : id;
+  state.category = "All";
+  state.favorites = false;
+  catDropdown.refresh();
+  renderTools();
+  if (jump) jumpToDirectory();
+}
+
+function toggleFavorites({ jump = false } = {}) {
+  state.favorites = !state.favorites;
+  state.collection = null;
+  state.category = "All";
+  catDropdown.refresh();
+  renderTools();
+  if (jump && state.favorites) jumpToDirectory();
+}
+
+function goHome() {
+  state.category = "All";
+  state.collection = null;
+  state.favorites = false;
+  state.prices.clear();
+  searchInput.value = "";
+  catDropdown.refresh();
+  priceDropdown.refresh();
+  renderTools();
+  window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+}
+
+const sortDropdown = createDropdown($("#dd-sort"), {
+  name: "Sort by",
+  options: SORT_OPTIONS,
+  getLabel: () => `Sort: ${SORT_OPTIONS.find((o) => o.value === state.sort).label}`,
+  isSelected: (value) => state.sort === value,
+  onPick: (value) => {
+    state.sort = value;
+    savePref(SORT_KEY, value);
+    renderTools();
+  }
+});
+
+const priceDropdown = createDropdown($("#dd-price"), {
+  name: "Pricing filter",
+  multi: true,
+  options: [{ value: "all", label: "All" }, ...PRICES.map((p) => ({ value: p, label: p }))],
+  getLabel: () => `Pricing: ${state.prices.size ? PRICES.filter((p) => state.prices.has(p)).join(", ") : "All"}`,
+  isSelected: (value) => (value === "all" ? state.prices.size === 0 : state.prices.has(value)),
+  onPick: (value) => {
+    if (value === "all") state.prices.clear();
+    else if (state.prices.has(value)) state.prices.delete(value);
+    else state.prices.add(value);
+    if (state.prices.size === PRICES.length) state.prices.clear();
+    renderTools();
+  }
+});
+
+const catDropdown = createDropdown($("#dd-cat"), {
+  name: "Category filter",
+  options: [ALL, ...CATS].map((c) => ({ value: c.key, label: c.key === "All" ? "All" : c.label })),
+  getLabel: () => `Category: ${state.category === "All" ? "All" : catOf(state.category).label}`,
+  isSelected: (value) => !state.collection && !state.favorites && state.category === value,
+  onPick: (value) => setCategory(value)
+});
+
+/* ---------- Navigation widgets ---------- */
+
+$("#cat-list").append(
+  ...[ALL, ...CATS].map((cat) =>
+    h("button", { type: "button", class: "cat", "data-cat": cat.key }, icon(cat.icon), h("span", { text: cat.label }), h("span", { class: "count" }))
+  )
+);
+
+$("#col-list").append(
+  ...COLLECTIONS.map((col) =>
+    h("button", { type: "button", class: "col", "data-col": col.id }, icon(col.icon), h("span", { text: col.label }))
+  )
+);
+
+$("#m-tiles").append(
+  ...[ALL, ...CATS].map((cat) =>
+    h("button", { type: "button", class: "tile", "data-cat": cat.key }, icon(cat.icon), h("span", { text: cat.short }))
+  )
+);
+
+$$("[data-cat]").forEach((button) => button.addEventListener("click", () => setCategory(button.dataset.cat)));
+$$("[data-col]").forEach((button) => button.addEventListener("click", () => setCollection(button.dataset.col)));
+
+const mTiles = $("#m-tiles");
+const mViewAll = $("#m-viewall");
+mViewAll.addEventListener("click", () => {
+  const expanded = mTiles.classList.toggle("expanded");
+  mViewAll.replaceChildren(expanded ? "Show less" : "View all ", ...(expanded ? [] : [icon("arrow")]));
+});
+
+createPopover(
+  $("#nav-categories"),
+  $("#pop-categories"),
+  [ALL, ...CATS].map((cat) => ({ label: cat.label, icon: cat.icon, run: () => setCategory(cat.key, { jump: true }) }))
+);
+
+createPopover(
+  $("#nav-collections"),
+  $("#pop-collections"),
+  COLLECTIONS.map((col) => ({ label: col.label, icon: col.icon, run: () => setCollection(col.id, { jump: true }) }))
+);
+
+$("#nav-home").addEventListener("click", goHome);
+$("#logo-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  goHome();
+});
+$("#nav-fav").addEventListener("click", () => toggleFavorites({ jump: true }));
+$("#hdr-fav").addEventListener("click", () => toggleFavorites({ jump: true }));
+
+$("#hdr-search").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  searchInput.focus({ preventScroll: true });
+});
+
+/* Mobile menu */
+
+const mobileMenu = $("#mobile-menu");
+const menuToggle = $("#menu-toggle");
+
+function buildMobileMenu() {
+  const mk = (label, iconName, run, extra = {}) => {
+    const button = h("button", { type: "button", ...extra }, icon(iconName), label);
+    button.addEventListener("click", () => {
+      setMenu(false);
+      run();
+    });
+    return button;
+  };
+
+  mobileMenu.replaceChildren(
+    h("div", { class: "group" },
+      mk("Home", "sparkle", goHome),
+      mk("Favourites", "bookmark", () => toggleFavorites({ jump: true }), { "data-mm": "fav" })
+    ),
+    h("div", { class: "group" }, ...COLLECTIONS.map((col) => mk(col.label, col.icon, () => setCollection(col.id, { jump: true })))),
+    h("div", { class: "group" },
+      mk("Add a tool", "plus", () => openToolDialog()),
+      mk("Export backup", "external", exportTools),
+      mk("Import backup", "list", () => $("#import-file").click())
+    )
+  );
+}
+
+function setMenu(open) {
+  mobileMenu.hidden = !open;
+  menuToggle.setAttribute("aria-expanded", String(open));
+}
+
+menuToggle.addEventListener("click", () => setMenu(mobileMenu.hidden));
+window.matchMedia("(min-width: 901px)").addEventListener?.("change", (event) => {
+  if (event.matches) setMenu(false);
+});
+
+/* ---------- Layout toggle ---------- */
+
+const narrowMQ = window.matchMedia("(max-width: 700px)");
+
+function applyView() {
+  toolsGrid.dataset.view = narrowMQ.matches ? "list" : state.view;
+  searchInput.placeholder = narrowMQ.matches ? "Search for tools…" : "Search for tools, features or use cases…";
+  $$(".view-toggle button").forEach((button) => {
+    const on = button.dataset.view === state.view;
+    button.classList.toggle("active", on);
+    button.setAttribute("aria-pressed", String(on));
+  });
+}
+
+$$(".view-toggle button").forEach((button) => {
+  button.addEventListener("click", () => {
+    state.view = button.dataset.view;
+    savePref(VIEW_KEY, state.view);
+    applyView();
+  });
+});
+
+narrowMQ.addEventListener?.("change", applyView);
+
+/* ---------- Rendering ---------- */
+
+function toolRow(tool) {
+  const favLabel = tool.favorite ? `Remove ${tool.name} from favourites` : `Add ${tool.name} to favourites`;
+
+  const visit = h("a", { class: "ico", href: tool.url, target: "_blank", rel: "noopener noreferrer", "aria-label": `Visit ${tool.name}`, title: "Visit website" }, icon("external"));
+  const fav = h("button", { type: "button", class: `ico fav${tool.favorite ? " is-on" : ""}`, "aria-pressed": String(tool.favorite), "aria-label": favLabel, title: tool.favorite ? "Remove from favourites" : "Add to favourites" }, icon("bookmark"));
+  const edit = h("button", { type: "button", class: "ico edit", "aria-label": `Edit ${tool.name}`, title: "Edit" }, icon("pencil"));
+  const del = h("button", { type: "button", class: "ico del", "aria-label": `Remove ${tool.name}`, title: "Remove" }, icon("trash"));
+
+  fav.addEventListener("click", () => {
+    tool.favorite = !tool.favorite;
+    saveTools();
+    renderTools();
+  });
+
+  edit.addEventListener("click", () => openToolDialog(tool));
+
+  del.addEventListener("click", () => {
+    const index = tools.indexOf(tool);
+    tools.splice(index, 1);
+    saveTools();
+    renderTools();
+
+    showToast(`Removed ${tool.name}`, "Undo", () => {
+      if (isDuplicate(tool)) {
+        showToast(`Couldn't restore ${tool.name} because it was added again.`);
+        return;
+      }
+      tools.splice(Math.min(index, tools.length), 0, tool);
+      saveTools();
+      renderTools();
+    });
+  });
+
+  const tags = tool.tags.length ? tool.tags : [catOf(tool.category).short];
+
+  return h("article", { class: "tool" },
+    h("div", { class: "t-logo", "aria-hidden": "true", text: tool.name.charAt(0).toUpperCase() }),
+    h("h3", { class: "t-name", text: tool.name }),
+    h("p", { class: "t-desc", text: tool.description }),
+    h("div", { class: "t-tags" }, tags.map((tag) => h("span", { class: "tag", text: tag }))),
+    h("span", { class: `badge badge-${tool.price.toLowerCase()}`, text: tool.price }),
+    h("div", { class: "t-actions" }, visit, fav, edit, del)
+  );
+}
+
+function renderTools() {
+  const query = searchInput.value.trim().toLowerCase();
+  const essential = new Set([...tools].sort(sorters.popular).slice(0, 5));
+
+  const visible = tools
+    .filter((tool) => {
+      const haystack = [tool.name, tool.category, catOf(tool.category).label, tool.description, tool.price, ...tool.tags];
+      if (query && !haystack.some((value) => value.toLowerCase().includes(query))) return false;
+      if (state.favorites && !tool.favorite) return false;
+      if (state.collection && !COLLECTION_TESTS[state.collection](tool, essential)) return false;
+      if (!state.favorites && !state.collection && state.category !== "All" && tool.category !== state.category) return false;
+      if (state.prices.size && !state.prices.has(tool.price)) return false;
+      return true;
+    })
+    .sort(sorters[state.sort]);
+
+  toolsGrid.replaceChildren(...visible.map(toolRow));
+
+  emptyState.hidden = visible.length > 0;
+  emptyState.textContent = tools.length === 0
+    ? "Your toolbox is empty. Tap “+” to save your first tool."
+    : "No tools match your filters. Try another search, category or pricing option.";
+
+  $("#tool-count").textContent = plural(visible.length, "tool");
+
+  let sub = "Browse, filter and find the right AI tool for your needs.";
+  if (state.favorites) sub = "Your saved favourites.";
+  else if (state.collection) sub = `Collection: ${COLLECTIONS.find((c) => c.id === state.collection).label}`;
+  else if (state.category !== "All") sub = `Showing ${catOf(state.category).label} tools.`;
+  $("#dir-sub").textContent = sub;
+
+  // Sidebar, tiles, header state
+  const viewingCategory = !state.favorites && !state.collection;
+
+  $$("[data-cat]").forEach((button) => {
+    const key = button.dataset.cat;
+    const on = viewingCategory && state.category === key;
+    button.classList.toggle("active", on);
+    button.setAttribute("aria-pressed", String(on));
+    const count = button.querySelector(".count");
+    if (count) count.textContent = key === "All" ? tools.length : tools.filter((t) => t.category === key).length;
+  });
+
+  $$("[data-col]").forEach((button) => {
+    const on = state.collection === button.dataset.col;
+    button.classList.toggle("active", on);
+    button.setAttribute("aria-pressed", String(on));
+  });
+
+  $("#nav-home").classList.toggle("active", viewingCategory && state.category === "All");
+  $("#nav-fav").classList.toggle("active", state.favorites);
+  $("#hdr-fav").setAttribute("aria-pressed", String(state.favorites));
+  $("[data-mm='fav']")?.classList.toggle("active", state.favorites);
+
+  sortDropdown.refresh();
+  priceDropdown.refresh();
+  catDropdown.refresh();
+
+  // Popular chips come from your own collection.
+  $("#popular-chips").replaceChildren(
+    ...[...tools].sort(sorters.popular).slice(0, 7).map((tool) => {
+      const chip = h("button", { type: "button", class: "chip", text: tool.name });
+      chip.addEventListener("click", () => {
+        searchInput.value = tool.name;
+        renderTools();
+        jumpToDirectory();
+      });
+      return chip;
+    })
+  );
+}
+
+/* ---------- Search ---------- */
+
+searchInput.addEventListener("input", renderTools);
+
+$("#search-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  renderTools();
+  jumpToDirectory();
+});
+
+const isMac = /Mac|iPhone|iPad/.test(navigator.platform || "");
+$("#kbd-hint").firstElementChild.textContent = isMac ? "⌘" : "Ctrl";
+
+document.addEventListener("keydown", (event) => {
+  if (dialog.open) return;
+  const typing = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName);
+
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+    event.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+  } else if (event.key === "/" && !typing) {
+    event.preventDefault();
+    searchInput.focus();
+  }
+});
+
+/* ---------- Add / edit dialog ---------- */
+
+$("#tool-category").append(...CATS.map((cat) => h("option", { value: cat.key, text: cat.label })));
+
+function showFormError(message) {
+  formError.textContent = message;
+  formError.hidden = false;
+}
+
+function hideFormError() {
+  formError.hidden = true;
+  formError.textContent = "";
+}
+
+function openToolDialog(tool = null) {
+  editingTool = tool;
+  form.reset();
+  hideFormError();
+
+  if (tool) {
+    $("#tool-name").value = tool.name;
+    $("#tool-url").value = tool.url;
+    $("#tool-category").value = tool.category;
+    $("#tool-price").value = tool.price;
+    $("#tool-description").value = tool.description;
+    $("#tool-tags").value = tool.tags.join(", ");
+  }
+
+  $("#dialog-eyebrow").textContent = tool ? "Update your collection" : "Expand your collection";
+  $("#dialog-title").textContent = tool ? "Edit AI tool" : "Add an AI tool";
+  $("#submit-button").textContent = tool ? "Save changes" : "Add to my collection";
+
+  dialog.showModal();
+}
+
+$$(".js-add").forEach((button) => button.addEventListener("click", () => openToolDialog()));
+$("#close-dialog").addEventListener("click", () => dialog.close());
+
+dialog.addEventListener("click", (event) => {
+  if (event.target === dialog) dialog.close();
+});
+
+dialog.addEventListener("close", () => {
+  editingTool = null;
+  hideFormError();
+});
+
+form.addEventListener("input", hideFormError);
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const data = new FormData(form);
+  const name = data.get("name").trim();
+  const rawUrl = data.get("url").trim();
+
+  let parsedUrl;
+  try {
+    parsedUrl = new URL(rawUrl);
+    if (!["http:", "https:"].includes(parsedUrl.protocol)) throw new Error("Invalid protocol");
+  } catch {
+    showFormError("Please enter a valid website address beginning with https:// or http://.");
+    return;
+  }
+
+  const fields = {
+    name,
+    url: parsedUrl.href,
+    category: data.get("category"),
+    price: data.get("price"),
+    description: data.get("description").trim(),
+    tags: cleanTags(data.get("tags"))
+  };
+
+  if (isDuplicate(fields, editingTool)) {
+    showFormError("That tool is already in your collection.");
+    return;
+  }
+
+  if (editingTool) {
+    Object.assign(editingTool, fields);
+    saveTools();
+    dialog.close();
+    renderTools();
+    showToast(`Saved changes to ${name}.`);
+    return;
+  }
+
+  tools.push({ ...fields, favorite: false, added: Date.now() });
+  saveTools();
+  dialog.close();
+
+  // Clear any search or pricing filter so the new card is actually visible.
+  searchInput.value = "";
+  state.prices.clear();
+  setCategory("All");
+});
+
+/* ---------- Backup: export and import ---------- */
+
+function exportTools() {
+  if (tools.length === 0) {
+    showToast("Nothing to export yet. Add a tool first.");
+    return;
+  }
+
+  const backup = { app: "toolbox", version: 2, exportedAt: new Date().toISOString(), tools };
+  const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `toolbox-backup-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+
+  showToast(`Exported ${plural(tools.length, "tool")}.`);
+}
+
+$("#export-button").addEventListener("click", exportTools);
+$("#import-button").addEventListener("click", () => $("#import-file").click());
+
+$("#import-file").addEventListener("change", async (event) => {
+  const input = event.target;
+  const file = input.files[0];
+  input.value = "";
+  if (!file) return;
+
+  if (file.size > 1_000_000) {
+    showToast("That file is too large to be a Toolbox backup.");
+    return;
+  }
+
+  try {
+    const parsed = JSON.parse(await file.text());
+    const list = Array.isArray(parsed) ? parsed : parsed.tools;
+    if (!Array.isArray(list)) throw new Error("No tools found");
+
+    const base = Date.now();
+    let imported = 0;
+    let skipped = 0;
+
+    list.forEach((raw, index) => {
+      const tool = normalizeTool(raw, base + index);
+      if (!tool || isDuplicate(tool)) {
+        skipped += 1;
+        return;
+      }
+      tools.push(tool);
+      imported += 1;
+    });
+
+    saveTools();
+    renderTools();
+    showToast(
+      `Imported ${plural(imported, "tool")}` +
+      (skipped ? `, skipped ${skipped} (duplicates or invalid).` : ".")
+    );
+  } catch {
+    showToast("Couldn't read that file. Choose a Toolbox backup (.json).");
+  }
+});
+
+buildMobileMenu();
+applyView();
+renderTools();
+
+</script>
+</body>
+</html>
