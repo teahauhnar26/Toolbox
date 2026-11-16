@@ -627,6 +627,45 @@ button { cursor: pointer; }
 .tools[data-view="grid"] .badge { width: auto; padding: 5px 14px; }
 .tools[data-view="grid"] .t-actions { justify-content: flex-start; margin: 4px 0 -6px -8px; }
 
+/* ---------- About ---------- */
+
+.about {
+  padding: 40px 0 48px;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: 16px;
+}
+
+.about h2 {
+  margin: 0;
+  font: italic 400 clamp(32px, 3.6vw, 48px)/1.04 var(--serif);
+}
+
+.about-lead {
+  margin: 14px 0 0;
+  max-width: 640px;
+  color: #dcd8e6;
+  font: 400 21px/1.35 var(--serif);
+}
+
+.about-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-notes li { padding-top: 16px; border-top: 1px solid var(--line-soft); }
+.about-notes h3 { margin: 0 0 6px; font: 600 15px/1.3 var(--sans); }
+.about-notes p { margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
+
+@media (max-width: 700px) {
+  .about { padding: 30px 0 36px; }
+  .about-lead { font: 400 15px/1.5 var(--sans); }
+  .about-notes { grid-template-columns: 1fr; gap: 18px; margin-top: 24px; }
+}
+
 /* ---------- Footer ---------- */
 
 footer {
@@ -857,6 +896,7 @@ dialog::backdrop { background: #000a; backdrop-filter: blur(2px); }
           <div class="pop" id="pop-collections" role="menu" aria-label="Collections" hidden></div>
         </div>
         <button type="button" class="nav-link" id="nav-fav">Favourites</button>
+        <button type="button" class="nav-link" id="nav-about">About</button>
       </nav>
 
       <div class="header-icons">
@@ -935,6 +975,27 @@ dialog::backdrop { background: #000a; backdrop-filter: blur(2px); }
           <p class="empty-state" id="empty-state" hidden></p>
         </section>
       </div>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">A small shelf for useful AI tools.</h2>
+        <p class="about-lead">Toolbox is a personal directory of AI tools, sorted by what they are good for. It starts with a few well-known ones, and you shape the rest.</p>
+
+        <ul class="about-notes">
+          <li>
+            <h3>Make it yours</h3>
+            <p>Add any tool with the plus button, edit or remove the ones you don't need, and bookmark your favourites.</p>
+          </li>
+          <li>
+            <h3>Saved in your browser</h3>
+            <p>Your list is stored on this device only. There is no account and nothing to sign up for.</p>
+          </li>
+          <li>
+            <h3>Keep a backup</h3>
+            <p>Clearing your browser data clears the list too. Use Export to save a copy, and Import to bring it back.</p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
@@ -1210,6 +1271,10 @@ const plural = (count, word) => `${count} ${word}${count === 1 ? "" : "s"}`;
 
 function jumpToDirectory() {
   directory.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+}
+
+function jumpToAbout() {
+  $("#about").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
 }
 
 /* ---------- Toast (messages + undo) ---------- */
@@ -1489,6 +1554,7 @@ $("#logo-link").addEventListener("click", (event) => {
 });
 $("#nav-fav").addEventListener("click", () => toggleFavorites({ jump: true }));
 $("#hdr-fav").addEventListener("click", () => toggleFavorites({ jump: true }));
+$("#nav-about").addEventListener("click", jumpToAbout);
 
 $("#hdr-search").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
@@ -1520,7 +1586,8 @@ function buildMobileMenu() {
       mk("Add a tool", "plus", () => openToolDialog()),
       mk("Export backup", "external", exportTools),
       mk("Import backup", "list", () => $("#import-file").click())
-    )
+    ),
+    h("div", { class: "group" }, mk("About", "book", jumpToAbout))
   );
 }
 
