@@ -9,7 +9,7 @@ A curated directory of AI tools for creativity, productivity, learning and devel
 Toolbox is a personal shelf of AI tools, sorted by what they are good for. It starts with a few well-known tools, and you can shape the rest yourself.
 
 - **Browse by category:** Image Generation, Video Creation, Coding & Dev, Writing & Content, Productivity, Learning & Research, and Other.
-- **Collections:** Essential AI Tools, Free AI Tools, For Students, For Creators.
+- **Collections:** Essential AI Tools, Free & Freemium, For Students, For Creators.
 - **Search and filter:** search by name, feature or use case (shortcut: `Ctrl` + `K`), then sort or filter by price and category.
 - **Two layouts:** card view or list view.
 - **Make it yours:** add your own tools, edit or remove existing ones, and bookmark favourites.

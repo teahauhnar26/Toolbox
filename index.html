@@ -1058,6 +1058,10 @@ const STORAGE_KEY = "toolbox.tools.v1";
 const SORT_KEY = "toolbox.sort.v1";
 const VIEW_KEY = "toolbox.view.v1";
 
+// Warn once per session if the tool list can't be saved.
+let saveWarningPending = false;
+let saveWarningShown = false;
+
 const ALL = { key: "All", label: "All Tools", short: "All Tools", icon: "sparkle" };
 const CATS = [
   { key: "Image", label: "Image Generation", short: "Image", icon: "image" },
@@ -1075,7 +1079,7 @@ const catOf = (key) => [ALL, ...CATS].find((c) => c.key === key);
 // Collections are smart groups built from your own tools.
 const COLLECTIONS = [
   { id: "essential", label: "Essential AI Tools", icon: "layers" },
-  { id: "free", label: "Free AI Tools", icon: "box" },
+  { id: "free", label: "Free & Freemium", icon: "box" },
   { id: "students", label: "For Students", icon: "box" },
   { id: "creators", label: "For Creators", icon: "box" }
 ];
@@ -1096,7 +1100,7 @@ const sorters = {
 };
 
 const SORT_OPTIONS = [
-  { value: "popular", label: "Popular" },
+  { value: "popular", label: "Favourites first" },
   { value: "newest", label: "Newest first" },
   { value: "oldest", label: "Oldest first" },
   { value: "az", label: "Name A to Z" },
@@ -1211,6 +1215,11 @@ function saveTools() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tools));
   } catch {
     /* storage unavailable (private mode / blocked) - the app still works for this session */
+    if (!saveWarningShown && !saveWarningPending) {
+      saveWarningPending = true;
+      // Wait a moment so the toast system is ready and any message from the current action shows first.
+      setTimeout(showSaveWarning);
+    }
   }
 }
 
@@ -1284,6 +1293,15 @@ let toastTimer;
 function hideToast() {
   clearTimeout(toastTimer);
   toast.hidden = true;
+  if (saveWarningPending) setTimeout(showSaveWarning);
+}
+
+// Shows the save warning once, without covering another message (such as "Undo").
+function showSaveWarning() {
+  if (!saveWarningPending || !toast.hidden) return;
+  saveWarningPending = false;
+  saveWarningShown = true;
+  showToast("Changes won't be saved in this browser.");
 }
 
 function showToast(message, actionLabel, onAction) {
@@ -1826,6 +1844,12 @@ form.addEventListener("submit", (event) => {
   const data = new FormData(form);
   const name = data.get("name").trim();
   const rawUrl = data.get("url").trim();
+
+  // Same rule as normalizeTool: a name that is only spaces is not a name.
+  if (!name) {
+    showFormError("Please enter a tool name.");
+    return;
+  }
 
   let parsedUrl;
   try {
